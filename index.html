@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            GO GO GO
+        </title>
+    </head>
+    <body>
+        <div id="image">
+            <h1>Welcome to qminh</h1>
+        </div>
+        <a id="go_gmail" onclick="gotomail();">
+        <div class="block-content">
+            <div class="content-inside">
+                <p>Gmail</p>
+            </div>
+        </div>
+    </a>
+        <br>
+        <a id="gotoyoutube" onclick="gotoyt();">
+        <div class="block-content">
+            <div class="content-inside">
+                <p>Youtube</p>
+            </div>
+        </div>
+    </a>
+        <br>
+        <a id="minhdz" onclick="gotogg();">
+        <div class="block-content">
+            <div class="content-inside">
+                <p>Google</p>
+            </div>
+        </div>
+    </a>
+    <br>
+    <a id="xt" onclick="xemthem();">
+    <div id="xemthem">
+        <p>Xem thêm</p>
+    </div>
+</a>
+    <div id="content_hide" style="display: none;">
+        <a id="go_vne" onclick="gotovne();">
+            <div class="block-content">
+                <div class="content-inside">
+                    <p>VNExpress</p>
+                </div>
+            </div>
+        </a>
+            <br>
+            <a id="gotodantri" onclick="gotodt();">
+            <div class="block-content">
+                <div class="content-inside">
+                    <p>Dân trí</p>
+                </div>
+            </div>
+        </a>
+            <br>
+            <a id="qminhdz" onclick="gotoqm();">
+            <div class="block-content">
+                <div class="content-inside">
+                    <p>qminh Page</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <footer>
+        <p>By qminh | 2021</p>
+    </footer>
+    </body>
+    <style>
+        body{
+            font-family: Nurimo, Arial;
+            text-align: center;
+        }
+        #image{
+            text-align: center;
+        }
+        div.block-content{
+            width: 140px;
+            height: 40px;
+            background-color: red;
+            transition: 300ms;
+            border-radius:14px ;
+            padding: 12px 12px;
+            margin-left: 603px;
+        }
+        div.block-content:hover{
+            background-color: black;
+            color: white;
+        }
+        footer{
+            text-align: center;
+        }
+        #xemthem{
+            text-align: center;
+        }
+    </style>
+    <script>
+        function gotomail (){
+            document.location.href="https://mail.google.com";
+        };
+        function gotoyt(){
+            document.location.href="https://www.youtube.com";
+        };
+        function gotogg(){
+            document.location.href="https://google.com";
+        };
+        function xemthem(){
+            document.getElementById('content_hide').style.display = "block";
+            document.getElementById('xt').style.display = "none";
+        };
+        function gotovne (){
+            document.location.href="https://vnexpress.net/";
+        };
+        function gotodt (){
+            document.location.href="https://dantri.com.vn/";
+        };
+        function gotoqm (){
+            document.location.href="https://qminh.tk/";
+        };
+    </script>
+</html>
